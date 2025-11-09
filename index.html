@@ -3,66 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PORTFOLIO</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tiago de Gregori Portfolio</title>
+    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header class="head">
         <div class="header-container">       
-            <a href="/">
-                <h1 class="logo">HOME</h1>
+            <a href="#">
+                <h1 class="logo">TG</h1>
             </a>
-            <nav>
+
+            <nav class="menu">
                 <ul>
-                    <li><a href="#about">about</a></li>
                     <li><a href="#projects">project's</a></li>
                     <li><a href="mycv.html">my cv</a></li>
-                    <li><a href="contact.html">contact me</a></li>
+                    <li>CLICK TO INVERT COLOURS</li>
                 </ul>
-                <div class="social-icons">
-                    <a href="https://github.com/tagrgr" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/tagrgr" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://instagram.com/tiagogregori" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://facebook.com/tiagodegregori" target="_blank"><i class="fab fa-facebook"></i></a>
-                </div>
             </nav>
         </div>
     </header>
     
-    <section class="hero">
-        <h2>cooL Portfolio</h2>
-    </section>
+    <section class="home">
+        <div class="info">
+            <h2>Hey ya, I'm Tiago de Gregori</h2>
+            <p>I’m a programmer in development who loves building things and experimenting with technology.</p>
+            <p>I like taking on new challenges, sharing ideas with the dev community, and creating automations that make life easier.</p>
 
-    <section class="about" id="about">
-        <div class="know-me">
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ratione in magni cumque, natus recusandae animi distinctio, corrupti accusantium aperiam, voluptas debitis veritatis quo fugit aut? Quisquam nostrum nesciunt non?</p>
-            <a href="#projects" class="btn-project">project's</a>
-            <!-- <a href="mycv.html" class="btn-mycv">my cv</a> -->
+            <ul>
+                <li>
+                    <a href="https://github.com/tagrgr" target="_blank" title="Go to this LinkedIn link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/tagrgr" target="_blank" title="Go to this GitHub link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/353899853638" target="_blank" title="Contact by WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/tiagogregori" target="_blank" title="Go to this Instagram link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/tiagodegregori" target="_blank" title="Go to this Facebook link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="pic right-side"></div>
-        <div class="pic left-side"></div>
-        <div class="know-me">
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae debitis necessitatibus tempore. Ipsa nulla non sequi quibusdam accusantium quas sit odit rerum. Magnam fugit cumque recusandae voluptatum! Excepturi, numquam obcaecati?</p>
-            <a href="contact.html" class="btn-contact">contact me</a>
+
+        <div class="container-pic">
+            <div class="pic">
+                <img src="./src/images/profile-photo.jpg" alt="Tiago portfolio photo">
+            </div>
         </div>
     </section>
 
     <section class="projects" id="projects">
-        <h3>My own Projects</h3>
-        <div class="pro">
-            <a href="">
-                <img src="" alt="">
-            </a>
+        <h3 class="title">My own Projects</h3>
+        <div class="container-pro">
+            <div class="active project">
+                <a href="https://github.com/tagrgr/mobile-and-web-weather-application-React-Native-" target="_blank">
+                    <img src="./src/images/wheather-app.png" alt="React Native Weather App">
+                    <h4>React Native Weather App</h4>
+                    <div class="project-info">
+                        <p>add project info</p>
+                        <p>Access by GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+            <div class="active project">
+                <a href="https://github.com/tagrgr/monster-mayhem-hexagons-board-game" target="_blank">
+                    <img src="./src/images/monster-mayhem-hexagons.png" alt="Monster Mayhem Hexagons Board Game">
+                    <h4>Monster Mayhem Hexagons Board Game</h4>
+                    <div class="project-info">
+                        <p>add project info</p>
+                        <p>Access by GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+            <div class="active project">
+                <a href="https://github.com/tagrgr/monster-mayhem-multiplayer-board-game-withServer" target="_blank">
+                    <img src="./src/images/monster-mayhem-backend.png" alt="Monster Mayhem Backend Board Game">
+                    <h4>Monster Mayhem Backend Board Game</h4>
+                    <div class="project-info">
+                        <p>add project info</p>
+                        <p>Access by GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+            <div class="active project">
+                <a href="https://github.com/tagrgr/library-management-system-" target="_blank">
+                    <img src="./src/images/library-java.png" alt="Java Library Management System">
+                    <h4>Java Library Management System</h4>
+                    <div class="project-info">
+                        <p>add project info</p>
+                        <p>Access by GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+            <div class="active project">
+                <a href="https://github.com/tagrgr/animal-management-system" target="_blank">
+                    <img src="./src/images/zoo-java.png" alt="Java Dublin Zoo Management System">
+                    <h4>Java Dublin Zoo Management System</h4>
+                    <div class="project-info">
+                        <p>add project info</p>
+                        <p>Access by GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+            <div class="active project">
+                <a href="https://github.com/tagrgr/pythonMoodify2" target="_blank">
+                    <img src="./src/images/moodify-python.png" alt="Python Spotify Weather Playlist">
+                    <h4>Python Spotify Weather Playlist</h4>
+                    <div class="project-info">
+                        <p>add project info</p>
+                        <p>Access by GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="pro">
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </div>
+
+        <button class="show-more">Show more</button>
     </section>
 
     <footer class="foot" id="foot">
@@ -77,8 +150,9 @@
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://github.com/tagrgr" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/tagrgr" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/tagrgr" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/353899853638" target="_blank"><i class="fab fa-whatsapp"></i></a>
             <a href="https://instagram.com/tiagogregori" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://facebook.com/tiagodegregori" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
