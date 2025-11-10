@@ -20,29 +20,19 @@ body {
 }
 
 .head .logo {
-    /* background-color: orange; */
-    width: 75px;
+    /* background-color: aqua; */
+    width: 200px;
     height: 65px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    text-align: center;
-    line-height: 57px;
-    font-family: "Raleway", sans-serif;
-    transition: 0.2s;
-}
-
-.head a:hover .logo {
-    color: #9443d8;
-    border: 2px solid #9443d8;
 }
 
 .head .menu ul {
     /* background-color: red; */
     display: flex;
+    font-family: "Raleway", sans-serif;
 }
 
 .head .menu li a {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     padding: 10px 20px;
     transition: 0.2s;
@@ -57,7 +47,7 @@ body {
 .home {
     /* background-color: green; */
     display: flex;
-    min-height: calc(100vh - 125px);
+    min-height: calc(89vh - 125px);
     justify-content: space-between;
     align-items: center;
     gap: 50px;
@@ -119,60 +109,104 @@ body {
     border-radius: 50%;
 }
 
-.projects {
-    /* background-color: purple; */
-    padding: 70px 0;
+.home:after {
+    content: url('../images/seta.png');
+    position: absolute;
+    max-width: 50px;
+    height: 40px;
+    bottom: 40px;
+    left: 50%;
+    animation: downarrow 0.8s infinite alternate ease-in-out;
 }
 
-.projects .title {
+@-webkit-keyframes downarrow {
+    0% { -webkit-transform: translateY(0); 
+    opacity: 0.1; }
+    100% {-webkit-transform: translateY(0.5em);
+    opacity: 0.5; }
+}
+
+.title {
     text-align: center;
     padding: 60px 0;
-    font-size: 45px;
-    font-weight: 500;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 40px;
     text-transform: uppercase;
+    margin-top: 50px;
 }
 
-.projects .container-pro {
-    /* background-color: yellow; */
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    justify-content: center;
+.container-pro {
+    background-color: #666;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
 }
 
-.projects .project {
-    max-width: 260px;
-    max-height: 500px;
-    position: relative;
-}
-
-/* .projects .project img {
-    height: 100%;
-} */
-
-.projects .project h4 {
-    background-color: #040203;
-    width: 100%;
-    padding: 10px 0 10px 20px;
-    position: absolute;
-    bottom: 0;
-}
-
-.projects .project .project-info {
-    background-color: #040203;
-    position: absolute;
-    padding: 20px;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    font-weight: 600;
-    opacity: 0;
+.container-pro .project a img {
+    max-height: 100%;
+    max-width: 100%;   
+    object-fit: cover;
+    display: block;
     transition: 0.3s;
 }
 
-.projects .container-pro .project:hover .project-info {
+.container-pro .project a:hover img {
     opacity: 0.7;
-    background-color: #000;
 }
 
+.foot {
+    display: flex;
+    background-color: lightgreen;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.foot .foot-logo {
+    background-color: aqua;
+    width: 25%;
+    /* height:25%; */
+    margin-bottom: 20px;
+}
+
+.foot nav {
+    margin: 50px 0;
+}
+
+.foot nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.foot nav ul li a {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.foot nav ul li a:hover {
+    font-weight: 700;
+    color: #fff;
+}
+
+.foot nav ul li a:hover {
+    font-weight: 700;
+    color: #fff;
+}
+
+.foot .social-foot i {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.foot .social-foot a {
+    margin: 20px;
+}
+
+.foot .social-foot a:hover {
+    color: #fff;
+}
