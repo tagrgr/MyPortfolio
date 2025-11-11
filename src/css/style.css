@@ -156,57 +156,74 @@ body {
 }
 
 .foot {
+    font-family: "Raleway", sans-serif;
     display: flex;
-    background-color: lightgreen;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 100px 0;
+    padding: 20px 0 100px 0;
 }
 
 .foot .foot-logo {
-    background-color: aqua;
-    width: 25%;
-    /* height:25%; */
-    margin-bottom: 20px;
+    /* background-color: aqua; */
+    width: 20%;
+    transition: 0.1s;
+}
+
+.foot .foot-logo:hover {
+    border: 1px solid #9443d8;
 }
 
 .foot nav {
-    margin: 50px 0;
+    margin: 40px 0;
+    width: 420px;
+}
+
+.foot nav h4 {
+    font-family: "Press Start 2P", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .foot nav ul {
+    /* background-color: brown; */
     display: flex;
     justify-content: center;
-    max-width: 320px;
     margin: 0 auto;
+    gap: 40px;
+}
+
+.foot nav ul li {
+    /* border: 2px solid #9443d8; */
+    min-width: 100px;
 }
 
 .foot nav ul li a {
-    font-weight: 500;
-    font-size: 20px;
-    margin: 20px;
+    /* background-color: darkcyan; */
+    font-size: 14px;
     transition: 0.3s;
 }
 
 .foot nav ul li a:hover {
     font-weight: 700;
-    color: #fff;
+    color: #000;
+    background-color: #000;
+    opacity: 0.7;
 }
 
-.foot nav ul li a:hover {
-    font-weight: 700;
-    color: #fff;
+.foot nav ul li a img {
+    min-height: 60px;
 }
 
 .foot .social-foot i {
-    font-size: 20px;
+    font-size: 30px;
     transition: 0.3s;
 }
 
 .foot .social-foot a {
-    margin: 20px;
+    padding: 20px;
 }
 
 .foot .social-foot a:hover {
-    color: #fff;
+    color: #000;
 }
