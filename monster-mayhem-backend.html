@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Mayhem - Hexagonal Board Game</title>
+    <title>Monster Mayhem — Full Backend Integration</title>
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
@@ -26,7 +26,7 @@
                     <a href="./src/pdf/cvTiago10-25.pdf" target="_blank">my resume</a>
                 </li>
                 <li>
-                    <a href="https://github.com/tagrgr/monster-mayhem-hexagons-board-game" target="_blank">
+                    <a href="https://github.com/tagrgr/monster-mayhem-multiplayer-board-game-withServer" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
@@ -38,65 +38,65 @@
         <h4 class="projects-title">GALLERY</h4>
         <div class="gallery">
             <a href="#img1">
-                <img class="thumb" src="./src/images/mm-hex/1.png">
+                <img class="thumb" src="./src/images/mm-backend/1.png">
             </a>
             <a href="#img2">
-                <img class="thumb" src="./src/images/mm-hex/2.png">
+                <img class="thumb" src="./src/images/mm-backend/2.png">
             </a>
             <a href="#img3">
-                <img class="thumb" src="./src/images/mm-hex/3.png">
+                <img class="thumb" src="./src/images/mm-backend/3.png">
             </a>
             <a href="#img4">
-                <img class="thumb" src="./src/images/mm-hex/4.png">
+                <img class="thumb" src="./src/images/mm-backend/4.png">
             </a>
             <a href="#img5">
-                <img class="thumb" src="./src/images/mm-hex/5.png">
+                <img class="thumb" src="./src/images/mm-backend/5.png">
             </a>
             <a href="#img6">
-                <img class="thumb" src="./src/images/mm-hex/6.png">
+                <img class="thumb" src="./src/images/mm-backend/6.png">
             </a>
         </div>
 
         <div id="img1" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
             <div class="lightbox-content">
-                <img src="./src/images/mm-hex/1.png">
-                <p>First Game Layout - Assign up to 4 playes</p>
+                <img src="./src/images/mm-backend/1.png">
+                <p>Board Game First Layout</p>
             </div>
         </div>
         <div id="img2" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
             <div class="lightbox-content">            
-                <img src="./src/images/mm-hex/2.png">
-                <p>It's your turn, pick your monster</p>
+                <img src="./src/images/mm-backend/2.png">
+                <p>Login Pop up</p>
             </div>
         </div>
         <div id="img3" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
             <div class="lightbox-content">
-                <img src="./src/images/mm-hex/3.png">
-                <p>Available monster moves</p>
+                <img src="./src/images/mm-backend/3.png">
+                <p>User Data in</p>
             </div>
         </div>
         <div id="img4" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
             <div class="lightbox-content">
-                <img src="./src/images/mm-hex/4.png">
-                <p>Board Look during Player 1 turn</p>
+                <img src="./src/images/mm-backend/4.png">
+                <p>Assign user names logged in or whatsoever</p>
             </div>
         </div>
         <div id="img5" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
             <div class="lightbox-content">
-                <img src="./src/images/mm-hex/5.png">
-                <p>Winner message</p>
+                <img src="./src/images/mm-backend/5.png">
+                <p>Reset Board button hovering</p>
             </div>
         </div>
         <div id="img6" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
             <div class="lightbox-content">
-                <img src="./src/images/mm-hex/6.png">
-                <p>Score Player 2 Winner</p>
+                <img src="./src/images/mm-backend/6.png">
+                <p>Board highlights first layout</p>
             </div>
         </div>
     </section>
@@ -105,49 +105,68 @@
         <div class="project-header">
             <h4>Assessment Outline</h4>
             <p>
-                This project was originally developed as part of a college assessment.
+                This project was a college assessment where I developed Monster Mayhem, a web-based board game played on a 10×10 grid. Each player controls one side of the board, and all turns are taken simultaneously, with the server updating the board after processing every move.
                 <br>
-                In the assignment, I was “hired” to create a browser-based board game called Monster Mayhem — a strategy game played on a 10×10 grid of hexagonal tiles.
-                <br>
-                The focus of this assessment was to design and build the game board along with its core functionality.
+                Each player controls one side of the board, and all turns are taken simultaneously, with the server updating the board after processing every move.
             </p>
             <div class="project-links">
-                <a href="https://github.com/tagrgr/monster-mayhem-hexagons-board-game" target="_blank">
+                <a href="https://github.com/tagrgr/monster-mayhem-multiplayer-board-game-withServer" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
         </div>
         <div class="card">
             <div class="requirements">
-                <h4>Game Requirements</h4> 
+                <h4>Fullstack Web and Mobile Development B - Requirements</h4>
                 <p>
-                    • The grid must consist of connected regular hexagons. <br>
-                        ◦ There should be no gaps in between the hexagons <br>
+                    <strong>Core Functionality</strong><br>
+                    • Players can place a vampire, werewolf, or ghost on their edge (new pieces cant move that turn) and move existing monsters horizontally or vertically any distance, or up to two squares diagonally. They may move over their own monsters, but not opponents. <br>
 
-                    • The hexagon that the cursor is hovering over must be highlighted in some distinct way (eg colour change, border change etc). <br>
+                    • If two monsters end on the same square:
+                        • Vampire beats Werewolf
+                        • Werewolf beats Ghost
+                        • Ghost beats Vampire
+                        • Same type → both removed <br>
 
-                    • The user can select a hexagon – that selected must be highlighted in a distinct way (different from the hover). <br>
-                    
-                    • The user can deselect the hexagon. <br>
-                    
-                    • Challenge: Include additional relevant game mechanics, such as moving characters and highlighting their prospective path, or elements from the “ChatGPT Exercise - Monster Mayhem” document. <br>
+                    • A player’s turn ends when they choose or have no moves left. A round ends once everyone has played. A player is eliminated when 10 of their monsters are removed, and the last remaining player wins. <br>
 
-                    • No server-side code allowed! <br>
+                    • <strong>Requirements:</strong>
+                        • Player accounts
+                        • Save/resume games
+                        • Display total games played
+                        • Show player win/loss stats
+                        • Store all data in a database
+                        • Server built with JavaScript + Node.js
+                    </p>
                 </p>
             </div>
 
             <div class="grades">
-                <img src="./src/images/mm-hex/feedback.png">
+                <img src="./src/images/mm-backend/fullstack1.png">
+                <img src="./src/images/mm-backend/fullstack2.png">
             </div>
 
             <div class="grades">
-                <img src="./src/images/mm-hex/grade.png" alt="">
+                <img src="./src/images/mm-backend/saad1.png">
+                <img src="./src/images/mm-backend/saad2.png">
             </div>
+            
+            <div class="requirements">
+                <h4>Software Analysis, Design and Development B – Requirements</h4>
+                <p>
+                    <strong>For this section of the assessment, you must create a full testing setup for your backend. Your work should include:</strong><br>
 
-            <div class="grades">
-                <img src="./src/images/mm-hex/grade2.png" alt="">
+                    • <strong>API Tests</strong>: Verify all main endpoints, check correct responses and errors, and confirm the database updates as expected.<br>
+
+                    • <strong>Authentication Tests</strong>: Test registration, login, token validation, and access to protected routes.<br>
+
+                    • <strong>Test Users</strong>: Create users for valid, invalid, duplicate, and token-based scenarios.
+
+                    • <strong>plan.md</strong>: A brief document explaining your testing approach, tools, and the main cases covered.
+
+                    The goal is to ensure your backend is fully tested, reliable, and behaves correctly in all expected situations.
+                </p>
             </div>
-
         </div>
     </section>
     
