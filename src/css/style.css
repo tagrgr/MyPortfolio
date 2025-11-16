@@ -8,7 +8,7 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
     max-width: 1120px;
-    background: linear-gradient(150deg, #000, #9e00ff);
+    background: linear-gradient(0deg, #111 60%, #9d00ff 100%);
 }
 
 .head {
@@ -39,7 +39,7 @@ body {
 }
 
 .head .menu li a:hover {
-    background-color: #9443d8;
+    background-color: #b46af1;
     color: #fff;
     border-radius: 50px;
 }
@@ -93,8 +93,8 @@ body {
 }
 
 .home .info .social-media a i:hover {
-    color: #9443d8;
-    border: 1px solid #9443d8;
+    color: #b46af1;
+    border: 1px solid #b46af1;
     transform: scale(1.1);
 }
 
@@ -140,7 +140,7 @@ body {
 }
 
 .container-pro {
-    background-color: #777;
+    background-color: #9d00ff;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -157,33 +157,52 @@ body {
 
 .foot {
     font-family: "Raleway", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px 0 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
 }
 
-.foot .foot-logo {
-    /* background-color: aqua; */
-    width: 20%;
-    transition: 0.1s;
+.foot .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 50px;
 }
 
-.foot .foot-logo:hover {
-    border: 1px solid #9443d8;
+.foot .left-side .foot-logo img {
+    /* background-color: aqua; */
+    width: 40%;
+    transition: 1s;
 }
 
-.foot nav {
-    margin: 50px 0;
-    width: 600px;
+.foot .left-side .foot-logo img:hover {
+    border: 1px solid #9443d8;
+    border-radius: 10px;
+}
+
+.foot .social-foot {
+    display: flex;
+    margin: 20px 33px;
+}
+
+.foot .social-foot a {
+    padding: 0 10px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.foot .social-foot a:hover {
+    transform: scale(1.2);
+    color: #b46af1;
 }
 
 .foot nav h4 {
     font-family: "Press Start 2P", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
+    margin: 82px 0 10px 10px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .foot nav ul {
@@ -193,16 +212,15 @@ body {
 }
 
 .foot nav ul li a {
-    /* background-color: rgb(89, 0, 255); */
+    /* background-color: blue; */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 10px 10px 20px 10px;
     gap: 10px;
 }
 
 .foot nav ul li a:hover {
-    font-weight: 600;
+    color: #b46af1;
     transition: 0.2s;
     transform: scale(1.05);
 }
@@ -214,17 +232,4 @@ body {
 
 .foot nav ul li a p {
     font-size: 12px;
-}
-
-.foot .social-foot i {
-    font-size: 30px;
-    transition: 0.3s;
-}
-
-.foot .social-foot i:hover {
-    transform: scale(1.2);
-}
-
-.foot .social-foot a {
-    padding: 20px;
 }
