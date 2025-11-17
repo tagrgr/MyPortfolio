@@ -26,7 +26,7 @@
                     <a href="./src/pdf/cvTiago10-25.pdf" target="_blank">my resume</a>
                 </li>
                 <li>
-                    <a href="https://github.com/tagrgr/mobile-and-web-weather-application-React-Native-" target="_blank">
+                    <a href="https://github.com/tagrgr/library-management-system-" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
@@ -38,48 +38,48 @@
         <h4 class="projects-title">GALLERY</h4>
         <div class="gallery">
             <a href="#img1">
-                <img class="thumb" src="./src/images/weather-app/Screenshot 2025-11-14 220833.png">
+                <img class="thumb" src="./src/images/java-library/1.png">
             </a>
             <a href="#img2">
-                <img class="thumb" src="./src/images/weather-app/2.png">
+                <img class="thumb" src="./src/images/java-library/2.png">
             </a>
             <a href="#img3">
-                <img class="thumb" src="./src/images/weather-app/Screenshot 2025-11-14 221007.png">
+                <img class="thumb" src="./src/images/java-library/3.png">
             </a>
             <a href="#img4">
-                <img class="thumb" src="./src/images/weather-app/Screenshot 2025-11-14 221044.png">
+                <img class="thumb" src="./src/images/java-library/4.png">
             </a>
             <a href="#img5">
-                <img class="thumb" src="./src/images/weather-app/Screenshot 2025-11-14 225025.png">
+                <img class="thumb" src="./src/images/java-library/5.png">
             </a>
             <a href="#img6">
-                <img class="thumb" src="./src/images/weather-app/Screenshot 2025-11-14 225339.png">
+                <img class="thumb" src="./src/images/java-library/6.png">
             </a>
         </div>
 
         <div id="img1" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
-            <img src="./src/images/weather-app/Screenshot 2025-11-14 220833.png">
+            <img src="./src/images/java-library/1.png">
         </div>
         <div id="img2" class="lightbox">
             <a href="#" class="lightbox-bg"></a>            
-            <img src="/src/images/weather-app/2.png">
+            <img src="./src/images/java-library/2.png">
         </div>
         <div id="img3" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
-            <img src="./src/images/weather-app/Screenshot 2025-11-14 221007.png">
+            <img src="./src/images/java-library/3.png">
         </div>
         <div id="img4" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
-            <img src="./src/images/weather-app/Screenshot 2025-11-14 221044.png">
+            <img src="./src/images/java-library/4.png">
         </div>
         <div id="img5" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
-            <img src="./src/images/weather-app/Screenshot 2025-11-14 225025.png">
+            <img src="./src/images/java-library/5.png">
         </div>
         <div id="img6" class="lightbox">
             <a href="#" class="lightbox-bg"></a>
-            <img src="./src/images/weather-app/Screenshot 2025-11-14 225339.png">
+            <img src="./src/images/java-library/6.png">
         </div>
     </section>
 
@@ -87,62 +87,57 @@
         <div class="project-header">
             <h4>Assessment Outline</h4>
             <p>
-                Overview of the React Native Weather App project created as part of a college assessment.
+                This Java project was developed as part of a college assessment and focuses on creating a functional Library Management System (LMS).
                 <br>
-                Users can search for locations, view weather conditions, access their current location’s data, 
-                and check detailed forecasts.
-                <br>
-                You can explore the full project on GitHub link below, including all source code, components, and detailed README documentation.
+                The system allows librarians and members to add, update, and delete books, manage member information, issue and return books, maintain transaction records, and optionally use authentication for controlled access.
             </p>
             <div class="project-links">
-                <a href="https://github.com/tagrgr/mobile-and-web-weather-application-React-Native-" target="_blank">
+                <a href="https://github.com/tagrgr/library-management-system-" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
         </div>
         <div class="card">
             <div class="requirements">
-                <h4>Fullstack Web and Mobile Development B - Requirements</h4>
+                <h4>Programming - Requirements</h4>
                 <p>
-                    <strong>Core Functionality</strong><br>
-                    • Location search with history, clear option, and error handling <br>
+                    <strong>1. Design Principles & SOLID</strong><br>
+                    • Apply Single Responsibility Principle (SRP) <br>
 
-                    • Current weather (temp, humidity, wind), icons, Celsius/Fahrenheit toggle <br>
+                    • Follow Open-Closed Principle (OCP) by making classes extendable for future features. <br>
 
-                    • 5-day forecast with highs/lows and condition indicators <br>
-                    <strong>Technical Implementation</strong><br>
-                    • API integration with caching, rate-limit handling, and data normalization <br>
-                    • Efficient React rendering, responsive UI, low resource usage, offline support <br>
-                    <strong>User Experience</strong><br>
-                    • Intuitive, accessible design with smooth animations and light/dark mode <br>
-                    • Fully responsive across phones/tablets, both orientations, and various screen sizes <br>
-                    <strong>Documentation</strong><br>
-                    • README setup guide, component docs, API info, and code comments <br>
-                    <strong>Challenge Features</strong><br>
-                    • Historical charts, weather-based recommendations, custom animations <br>
-                    • Multiple saved locations, social sharing, and air-quality insights
+                    • Ensure Liskov Substitution Principle (LSP) <br>
+
+                    • Apply Interface Segregation Principle (ISP) by creating separate interfaces for different functionalities <br>
+
+                    • Use Dependency Inversion Principle (DIP) <br>
+
+                    <strong>2. Design Patterns</strong><br>
+                    • Factory Pattern: To create user objects dynamically, Singleton Pattern: For Database Connection management, Observer Pattern: To notify users when books are due. <br>
+
+                    <strong>3. Database in MySQL</strong><br>
+                    • Tables: <br>
+                    Users, Books, Transactions... Required to use JDBC to interact with MySQL.
+                    <br>
+                    <strong>4. Testing</strong><br>
+                    • JUnit for unit testing <br>
+                    <strong>5. Menu</strong>
                 </p>
             </div>
 
             <div class="grades">
-                <img src="./src/images/weather-app/fullstack.png" height="400px">
+                <img src="./src/images/java-library/programming-grade.png" alt="">
             </div>
 
             <div class="grades">
-                <img src="./src/images/weather-app/saad.png" height="250px">
+                <img src="./src/images/java-library/saad-grade.png" alt="">
             </div>
             
             <div class="requirements">
-                <h4>Software Analysis, Design and Development B – Requirements</h4>
+                <h4>Software Analysis, Design and Development A – Requirements</h4>
                 <p>
-                    <strong>Testing Strategy</strong><br>
-                    • Documented in the README: UI testing, user testing, usability, acceptance, unit tests, and deployment testing.<br>
-
-                    <strong>Stakeholder Communication</strong><br>
-                    • Weekly development diaries (submitted every Sunday at 23:59) outlining weekly progress, successes, challenges, obstacles resolved, current issues, and plans for the upcoming week.<br>
-
-                    <strong>Challenge: Automated Unit Testing</strong><br>
-                    • Implement automated tests and document the testing procedures in the strategy README.
+                    <strong>I was required to create a poster that could explain some aspects of how I developed the software.</strong><br>
+                    • Such as Requirements, Software Development Methodologies and Project Tracking Overview<br>
                 </p>
             </div>
         </div>

@@ -56,15 +56,6 @@
   object-fit: contain;
 }
 
-.lightbox-content {
-  display: block;
-  text-align: center;
-  background-color: #000;
-  font-weight: 800;
-  font-size: 18px;
-  color: white;
-}
-
 .project-container .project-header h4 {
   font-size: 30px;
   font-weight: 300;
@@ -76,9 +67,9 @@
 .project-container .project-header p {
   font-size: 16px;
   padding: 20px 150px;
-  line-height: 2.2;
+  line-height: 2;
   text-align: center;
-
+  
 }
 
 .project-container .project-header .project-links {
@@ -111,7 +102,7 @@
 .project-container .card .requirements {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-content: center;
   padding: 20px;
 }
@@ -125,9 +116,9 @@
 
 .project-container .card .requirements p {
   font-size: 14px;
-  line-height: 1.9;
+  line-height: 1.8;
 }
 
 .project-container .card .grades {
-  padding: 20px;
+  margin: 20px;
 }
