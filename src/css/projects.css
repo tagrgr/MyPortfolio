@@ -102,7 +102,6 @@
 .project-container .card .requirements {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-content: center;
   padding: 20px;
 }
@@ -121,4 +120,10 @@
 
 .project-container .card .grades {
   margin: 20px;
+}
+
+.project-container .card .grades .mood-pics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
 }

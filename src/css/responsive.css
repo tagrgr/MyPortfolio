@@ -31,8 +31,41 @@
         padding: 0 30px;
     }
 
+    .foot nav h4 {
+        line-height: 2;
+    }
+
     .foot nav ul {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lightbox img {
+        max-width: 80vw;
+        max-height: 70vh;
+    }
+
+    .project-container .card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-container .card .requirements h4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-container .card .requirements p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-container .card .grades {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -90,7 +123,6 @@
     .foot nav h4 {
         justify-content: center;
         font-size: 14px;
-        margin-bottom: 20px;
     }
 
     .foot nav ul {
@@ -128,13 +160,26 @@
         height: 60px;
     }
 
+    .lightbox img {
+        max-width: 95vw;
+        max-height: 80vh;
+    }
+
     .projects {
         padding: 30px;
+    }
+
+    .project-container .project-header p {
+        padding: 20px;
     }
 }
 
 @media(max-width: 425px) {
     .container-pro {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
     }
 }

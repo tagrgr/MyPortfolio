@@ -113,9 +113,8 @@ body {
     content: url('../images/seta.png');
     position: absolute;
     max-width: 50px;
-    height: 40px;
-    bottom: 40px;
-    left: 50%;
+    bottom: 20px;
+    left: 47%;
     animation: downarrow 0.8s infinite alternate ease-in-out;
 }
 
