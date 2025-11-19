@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* You'll see some backgorund colors commented out, I use it to know where exactly I'm styling, max width will define the max width size the website content will occupy. 23 schools link to gradient https://www.w3schools.com/cssref/func_linear-gradient.php */
+/* You'll see some backgorund colors commented out, I use it to know where exactly I'm styling, max width will define the max width size the website content will occupy. w3 schools link to gradient https://www.w3schools.com/cssref/func_linear-gradient.php */
 body {
     /* background-color: #282828; */
     font-family: "Poppins", sans-serif;
@@ -13,7 +13,7 @@ body {
     background: linear-gradient(0deg, #111 60%, #9d00ff 100%);
 }
 
-/* head has a display flex, justify content will style the row since this is flex default, we could change it by flex direction but we are not doing it here, so space between will split the items and set them next to the edges. align items will position the item vertically in its row and padding adds space inside the element.  */
+/* head has a display flex, justify content will style the row since this is flex default, we could change it by flex direction but we are not doing it here, so space between will split the items and set them next to the edges. align items will position the item vertically in its row and padding adds space inside the element, 30px vertical and 15px horizontal.  */
 .head {
     /* background-color: blue; */
     display: flex;
@@ -35,7 +35,7 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-/* text transform uppercase will make font in capitals whatever I wrote in html */
+/* text transform uppercase will transform font to capitals whatever I wrote in html */
 .head .menu li a {
     font-size: 18px;
     text-transform: uppercase;
@@ -50,6 +50,7 @@ body {
     border-radius: 50px;
 }
 
+/* I calculated the position min height by 89vh so I get 11vh view of new page and minus 125px which is the pxs sum of padding used in head 30px*2 + logo height 65px */
 .home {
     /* background-color: green; */
     display: flex;
@@ -59,6 +60,7 @@ body {
     gap: 50px;
 }
 
+/* display flex, flex direction column so I will position all inside class info by vertical columns, letter spacing will improve readability. */
 .home .info {
     /* background-color: black; */
     display: flex;
@@ -87,6 +89,7 @@ body {
     gap: 20px;
 }
 
+/* I decided to have a rounded border radius around the rounded social links icons so I used border width, style and color by calling border and a 50% vorder radius so it will basically be a circle. transition used as I have a hover coming up next and this will get us a smooth transtion */
 .home .info .social-media a i {
     border: 1px solid #fff;
     border-radius: 50%;
@@ -98,12 +101,14 @@ body {
     transition: 0.3s;
 }
 
+/* hover to get the website accent color plus scale it in 1.1, so it gets just 10% bigger when hover is called */
 .home .info .social-media a i:hover {
     color: #b46af1;
     border: 1px solid #b46af1;
     transform: scale(1.1);
 }
 
+/* rounded profile picture to follow website standards */
 .home .container-pic .pic {
     /* background-color: red; */
     max-width: 450px;
@@ -115,6 +120,12 @@ body {
     border-radius: 50%;
 }
 
+
+/* The :after pseudo-element creates a small invisible box at the end of class home, and the content property fills that box with my arrow image. Because it uses absolute position, I can place it exactly where I want inside the section, and animate it using the downarrow keyframes so the arrow moves smoothly up and down. */
+/* The position Property - https://www.w3schools.com/css/css_positioning.asp
+Content Property - https://www.w3schools.com/cssref/pr_gen_content.php
+Pseudo-elements - https://www.w3schools.com/css/css_pseudo_elements.asp 
+ */
 .home:after {
     content: url('../images/seta.png');
     position: absolute;
@@ -144,6 +155,7 @@ body {
     font-size: 12px;
 }
 
+/* display grid 3 columns and 2 rows defined */
 .container-pro {
     background-color: #9d00ff;
     display: grid;
@@ -156,10 +168,12 @@ body {
     transition: 0.3s;
 }
 
+/* opacity used so user know what theyre about to select */
 .container-pro .project a:hover img {
     opacity: 0.7;
 }
 
+/* decided to use grid in footer as well. In the left side I positioned my logo by the top and social media links below. By the right side I created a nav menu with a ul and attibuted images to these li's.  */
 .foot {
     font-family: "Raleway", sans-serif;
     display: grid;
@@ -167,6 +181,7 @@ body {
     margin-bottom: 100px;
 }
 
+/* this class used flex for positioning by column. */
 .foot .left-side {
     display: flex;
     flex-direction: column;
@@ -174,9 +189,10 @@ body {
     margin-top: 50px;
 }
 
+/* hard coded logo width so it has always same width it doesn't matter whats the responsive. */
 .foot .left-side .foot-logo img {
     /* background-color: aqua; */
-    width: 40%;
+    width: 200px;
     transition: 1s;
 }
 
@@ -187,7 +203,7 @@ body {
 
 .foot .social-foot {
     display: flex;
-    margin: 20px 33px;
+    margin: 20px 28px;
 }
 
 .foot .social-foot a {
@@ -216,6 +232,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* I assigned here specific values for margin each side. In Css it works always clockwise starting at the top so in this case margin left will be 20px and else 10. */
 .foot nav ul li a {
     /* background-color: blue; */
     display: flex;

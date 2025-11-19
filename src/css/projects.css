@@ -1,3 +1,6 @@
+/* responsible to style all html's but index.
+weather-app.html is the related html commented up */
+
 .projects-title {
   font-size: 30px;
   font-family: "Raleway", sans-serif;
@@ -14,20 +17,22 @@
   padding: 50px;
 }
 
+/* gallery thumbnail styling, object fit will crop image to fill box without any distortion, cursor pointer which is clickable and smooth transition. */
 .gallery .thumb {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: transform .3s;
 }
 
 .gallery .thumb:hover {
   transform: scale(1.05);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
+/* fullscreen container display hidden by default. inset same as, top, right, bottom and left = 0, z index with a high number to ensure it is on top of everything else. */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -38,10 +43,12 @@
   z-index: 100;
 }
 
+/* show lightbox when targeting its ID by the a link */
 .lightbox:target {
   display: flex;
 }
 
+/* clickable dark background to close it */
 .lightbox-bg {
   position: absolute;
   inset: 0;
@@ -53,7 +60,7 @@
   z-index: 1;
   max-width: 50vw;
   max-height: 50vh;
-  object-fit: contain;
+  object-fit: contain; /* keep entire image visible */
 }
 
 .project-container .project-header h4 {
@@ -96,7 +103,7 @@
 
 .project-container .card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .project-container .card .requirements {

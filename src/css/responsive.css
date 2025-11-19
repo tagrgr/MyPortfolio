@@ -1,3 +1,5 @@
+/* my responsive is linked under my style.css so it overrides it following the CSS cascade. so I defined new styling for these 3 screen sizes, 1024px, 768px and 425px, which I believe will cover most of screen sizes. */
+/* max screen width size */
 @media(max-width: 1024px) {
     .head {
         padding: 20px;
