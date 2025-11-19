@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiago de Gregori Portfolio</title>
     
+    <!-- links to all css files, google fonts and font-awesome icons -->
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
@@ -14,19 +15,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
+    <!-- header of index page, here I added a tag image for my logo, and a nav menu bar where I added in an unordered list with only 2 li's, a link to my resume, and a ID reference link to my #projects section below -->
     <header class="head">        
-            <img class="logo" src="./src/images/logo.png" alt="logo">
-            
-            <nav class="menu">
-                <ul>
-                    <li><a href="./src/pdf/cvTiago10-25.pdf" target="_blank">my resume</a></li>
-                    <li><a href="#projects">project's</a></li>
-                    
-                </ul>
-            </nav>
+        <img class="logo" src="./src/images/logo.png" alt="logo">
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="./src/pdf/cvTiago10-25.pdf" target="_blank">my resume</a></li>
+                <li><a href="#projects">project's</a></li>
+                
+            </ul>
+        </nav>
     </header>
     
+    <!-- In my home section, I got a div wrapping my heading tag, text content paragraphs and a social media ul icon links where I added in my contact info. In these links I decided to add attribute target blank so instead of just access its content, it opens a new tab every time user clicks on, also added in title that will pop out a message whn user hovers over  -->
     <section class="home">
         <div class="info">
             <h2>Hi there! <br>I'm Tiago de Gregori</h2>
@@ -67,13 +71,15 @@
             </ul>
         </div>
 
+        <!-- my profile picture, added 2 parent divs wrapping img for styling later on-->
         <div class="container-pic">
             <div class="pic">
-                <img src="./src/images/profile-photo.jpg" alt="Tiago portfolio photo">
+                <img src="./src/images/profile-photo.jpg" alt="Tiago profile photo">
             </div>
         </div>
     </section>
 
+    <!-- section Id Projects, so the idea here was to write something I could create a grid layout of images with 2 rows and 3 columns. Link to it html pages where I could have access to its links info, so I got a section with the id I used on my nav bar which means, everytime you click on projects in my nav bar it will send user to this section. a heading tag just before the first div and then I followed a pretty much basic structure: div wrapping up a tag link and this tag link wrapping up a tag image. Did that 6 times and wrapped all up in another div called container -->
     <section id="projects">
         <h3 class="title">Featured Projects<br><span class="title-info">Check out my GitHub to see even more!</span></h3>
         <div class="container-pro">
@@ -110,9 +116,10 @@
         </div>
     </section>
 
+    <!-- Splited my footed in left and right side. on my left side I got my logo positioned on top and social media links under. At the footer right side I got an list for my diplomas and certificates -->
     <footer class="foot">
         <div class="left-side">
-            <a class="foot-logo" href="#">
+            <a class="foot-logo" href="/">
                 <img src="./src/images/logo.png" alt="logo">
             </a>
 

@@ -1,8 +1,10 @@
+/* root styling so all text will be white and scrolling set to smooth */
 html {
     color: #fff;
     scroll-behavior: smooth;
 }
 
+/* You'll see some backgorund colors commented out, I use it to know where exactly I'm styling, max width will define the max width size the website content will occupy. 23 schools link to gradient https://www.w3schools.com/cssref/func_linear-gradient.php */
 body {
     /* background-color: #282828; */
     font-family: "Poppins", sans-serif;
@@ -11,6 +13,7 @@ body {
     background: linear-gradient(0deg, #111 60%, #9d00ff 100%);
 }
 
+/* head has a display flex, justify content will style the row since this is flex default, we could change it by flex direction but we are not doing it here, so space between will split the items and set them next to the edges. align items will position the item vertically in its row and padding adds space inside the element.  */
 .head {
     /* background-color: blue; */
     display: flex;
@@ -25,12 +28,14 @@ body {
     height: 65px;
 }
 
+/* menu flex, no flex direction again so it will be positioned side to side horizontally. */
 .head .menu ul {
     /* background-color: red; */
     display: flex;
     font-family: "Raleway", sans-serif;
 }
 
+/* text transform uppercase will make font in capitals whatever I wrote in html */
 .head .menu li a {
     font-size: 18px;
     text-transform: uppercase;
@@ -38,6 +43,7 @@ body {
     transition: 0.2s;
 }
 
+/* :hover will change tag a layout when I scroll over this item. In this case its background will become purple and its color white, border radius 50px will add rounded corners to this element*/
 .head .menu li a:hover {
     background-color: #b46af1;
     color: #fff;
