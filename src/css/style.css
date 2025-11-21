@@ -178,15 +178,7 @@ Pseudo-elements - https://www.w3schools.com/css/css_pseudo_elements.asp
     font-family: "Raleway", sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 100px;
-}
-
-/* this class used flex for positioning by column. */
-.foot .left-side {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 50px;
+    margin: 100px 0 20px;
 }
 
 /* hard coded logo width so it has always same width it doesn't matter whats the responsive. */
@@ -202,8 +194,7 @@ Pseudo-elements - https://www.w3schools.com/css/css_pseudo_elements.asp
 }
 
 .foot .social-foot {
-    display: flex;
-    margin: 20px 28px;
+    margin: 20px 30px;
 }
 
 .foot .social-foot a {
@@ -221,7 +212,7 @@ Pseudo-elements - https://www.w3schools.com/css/css_pseudo_elements.asp
     font-family: "Press Start 2P", sans-serif;
     font-size: 16px;
     text-transform: uppercase;
-    margin: 82px 0 10px 10px;
+    margin: 26px 0 0 10px;
     display: flex;
     justify-content: flex-start;
 }
@@ -248,10 +239,25 @@ Pseudo-elements - https://www.w3schools.com/css/css_pseudo_elements.asp
 }
 
 .foot nav ul li a img {
-    height: 60px;
-    width: 110px;
+    height: 50px;
+    width: 100px;
 }
 
 .foot nav ul li a p {
     font-size: 12px;
+}
+
+.foot .footer-center {
+    grid-column: 1 / -1; /* span both columns */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.foot .footer-center a {
+    color: #444;
+    transition: 0.3s;
+}
+
+.foot .footer-center a:hover {
+    color: #777;
 }

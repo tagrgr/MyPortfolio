@@ -128,7 +128,8 @@
 
     .foot nav h4 {
         justify-content: center;
-        font-size: 14px;
+        font-size: 15px;
+        margin-top: 90px;
     }
 
     .foot nav ul {
@@ -139,31 +140,18 @@
     .foot nav ul li a {
         flex-direction: column;
         align-items: center;
-        margin: 15px 0;
         text-align: center;
     }
 
-    .foot nav ul li a img {
-        width: 80%;
-        max-width: 180px;
-        height: auto;
-    }
-
     .foot .left-side {
-        order: 2;
         align-items: center;
-        margin-top: 40px;
+        /* margin-top: 90px; */
     }
 
     .foot .social-foot {
         justify-content: center;
         flex-wrap: wrap;
         margin: 20px 0;
-    }
-
-    .foot nav ul li a img {
-        width: 110px;
-        height: 60px;
     }
 
     .lightbox img {
