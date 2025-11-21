@@ -29,6 +29,10 @@
         justify-content: center;
     }
 
+    .home:after {
+        content: none;
+    }
+
     .projects .container-pro {
         padding: 0 30px;
     }
