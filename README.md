@@ -38,6 +38,6 @@
         - Lightbox using the CSS :target selector
 
 - **Purpose**
-    - *This portfolio shows the work I completed in my software development modules. It brings all my assessments together in one place and displays each project with images, descriptions, and links to the full code.*
+        - This portfolio shows the work I completed in my software development modules. It brings all my assessments together in one place and displays each project with images, descriptions, and links to the full code.
 
     
