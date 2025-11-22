@@ -62,6 +62,32 @@ weather-app.html is the related html commented up */
   object-fit: contain; /* keep entire image visible */
 }
 
+.lightbox-content {
+  position: relative;
+  display: inline-block;
+}
+
+.lightbox-close {
+  position: absolute;
+  border-radius: 2px;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 6px 12px;
+  z-index: 200;
+  font-family: "Raleway", sans-serif;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.lightbox-close:hover {
+  opacity: 1;
+  color: #b46af1;
+}
+
 .project-container .project-header h4 {
   font-size: 30px;
   font-weight: 300;
