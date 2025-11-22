@@ -2,9 +2,8 @@
 weather-app.html is the related html commented up */
 
 .projects-title {
-  font-size: 30px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
+  font-size: 22px;
+  font-family: "Press Start 2P", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
